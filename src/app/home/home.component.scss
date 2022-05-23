@@ -1,0 +1,101 @@
+.home-container {
+  display: flex;
+  .all-movies {
+    width: 75%;
+    min-height: calc(100vh - 80px);
+    border-right: 1px solid #fdc827;
+    padding: 20px 40px;
+    font-family: "Roboto", sans-serif;
+    background-image:  url(https://img5.goodfon.com/wallpaper/nbig/1/61/fon-netflix-logo-raduga-tsvet-fon-background-skachat-oboi-sk.jpg);
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      h4 {
+        text-transform: uppercase;
+        font-weight: bold;
+        border-left: 5px solid red;
+        padding-left: 10px;
+        color: white;
+      }
+      .view-all {
+        color: #ff9900;
+        cursor: pointer;
+      }
+    }
+    .movies-thumbnail {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      .movie {
+        .cover {
+          cursor: pointer;
+          img {
+            border-radius: 5px;
+          }
+          :hover{
+            transform: scale(1.05);
+          }
+        }
+        .detail {
+          width: 180px;
+          .name {
+            font-weight: bold;
+            height: 50px;
+            margin-top: 5px;
+            cursor: pointer;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  .popular-movies {
+    width: 25%;
+    min-height: calc(100vh - 80px);
+    padding: 20px 40px;
+    font-family: "Roboto", sans-serif;
+    background-color: rgba(93, 90, 90, 0.652);
+    h4 {
+      text-transform: uppercase;
+      font-weight: bold;
+      border-left: 5px solid red;
+      padding-left: 10px;
+      color:black;
+    }
+    .movies {
+      .movie {
+        margin-bottom: 20px;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .name {
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+      .view-all {
+        color: white;
+        text-align: right;
+        margin-top: 30px;
+        cursor: pointer;
+
+
+      }
+    }
+  }
+}
+
+.rating {
+  padding-right: 45px;
+  position: relative;
+  .rating-value {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    font-weight: bold;
+    color: white;
+  }
+}
